@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from 'react';
 import toast from 'react-hot-toast'; 
 import ACTIONS from '../Actions';
 import Client from '../components/Client';
-import Editor from '../components/editor';
+import Editor from '../components/Editor';
 import { initSocket } from '../socket';
 import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
 
@@ -85,7 +85,7 @@ const EditorPage = () => {
         <button className="btn leaveBtn">Leave</button>
       </div>
       <div className="editorwrap">
-          <Editor />
+          <Editor socketRef={socketRef} />
       </div>      
     </div>
   )
