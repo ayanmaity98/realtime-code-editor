@@ -13,10 +13,18 @@ function App() {
         position="top-right"
         toastOptions={{
             success: {
+              style: {
+                fontWeight: 600
+              },
               theme: {
                 primary: '#4aed88',
               },
             },
+            error: {
+              style: {
+                fontWeight: 600
+              }
+            }
         }}></Toaster>
     </div>
       <BrowserRouter>
